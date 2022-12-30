@@ -1,0 +1,7 @@
+####################
+#     Language     #
+####################
+# What language you wish to use.
+# The name of the file in the lang/ folder to use for configuration.
+# Default is en which results in lang/en.yml
+lang: "en"
