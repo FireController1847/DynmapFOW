@@ -5,3 +5,16 @@
 # The name of the file in the lang/ folder to use for configuration.
 # Default is en which results in lang/en.yml
 lang: "en"
+
+###################
+#     Database    #
+###################
+# Configure this to use the same database as dynmap.
+# DynmapFOW currently only supports MySQL.
+# If you are interested in implementing other databases, pull requests are happily accepted.
+database:
+    host: "127.0.0.1"
+    database: "dynmapfow"
+    username: ""
+    password: ""
+    dynmap_prefix: ""

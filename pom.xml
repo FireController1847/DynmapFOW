@@ -13,6 +13,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <dynmap.path>C:/Users/usfir/Development/_plugins/DynmapFOW/dynmap/Dynmap-3.5-beta-1.jar</dynmap.path>
     </properties>
 
     <!-- Project Repositories -->
@@ -117,6 +118,13 @@
     <!-- Dependencies -->
     <dependencies>
 
+        <!-- COMPILE: Javabase -->
+        <dependency>
+            <groupId>com.visualfiredev</groupId>
+            <artifactId>javabase</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+
         <!-- BUILD: SpigotMC -->
         <dependency>
             <groupId>org.spigotmc</groupId>
@@ -139,6 +147,15 @@
             <artifactId>dynmap-api</artifactId>
             <version>2.0</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- LOCAL: Dynmap -->
+        <dependency>
+            <groupId>dynmap-local</groupId>
+            <artifactId>dynmap-local</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${dynmap.path}</systemPath>
         </dependency>
 
     </dependencies>
